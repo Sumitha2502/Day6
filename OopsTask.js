@@ -107,6 +107,105 @@ class Movie
        // Color of the circle is red
        // Area of a circle is 28.274333882308138
        // Circumference of a circle is 18.84955592153876
+
+//3)
+
+class person {
+    constructor(name,fatherName,motherName,gender,address,mobileNo,Email) {
+      this.name = name ;
+      this.fatherName = fatherName ;
+      this.motherName = motherName;
+      this.gender = gender; 
+      this.address = address ;
+      this.mobileNo = mobileNo; ;
+      this.Email = Email;
+   }
+    personName() {
+      return `my name is  ${this.name}`;
+    }
+  
+    personfatherName() {
+      return `my father name is ${this.fatherName}`;
+    }
+    personmotherName() {
+      return `my mother name is ${this.motherName}`;
+    }
+    persongender() {
+      return `i am ${this.gender}`;
+    }
+    personaddress() {
+      return `my addressis ${this.adress}`;
+    }
+    personmobileNo() {
+      return `my mobile_no is ${this.mobile_No}`;
+    }
+    personEmail() {
+      return `my email is ${this.Email}`;
+    }
+  }
+  
+  let sumitha = new person("Jeni","Ebi","Prisci","male","chennai","123456","jeni@gmail.com");
+  
+  console.log(sumitha.personName());
+  console.log(sumitha.personfatherName());
+  console.log(sumitha.personmotherName());
+  console.log(sumitha.persongender());
+  console.log(sumitha.personaddress());
+  console.log(sumitha.personmobileNo());
+  console.log(sumitha.personEmail());
+
+//   Output:
+// my name is  Jeni
+// my father name is Ebi
+// my mother name is Prisci
+// i am male
+// my addressis undefined
+// my mobile_no is undefined
+// my email is jeni@gmail.com
+
+//4)write a class to calculate the uber price.       
+
+class UberPriceCalc{
+    constructor(BaseFare,CostPerMinute,MinutesOfRide,CostPerMile,DistanceOfRide,BookingFee,OtherFees){
+    this.BF=BaseFare
+    this.CPM=CostPerMinute
+    this.MOR=MinutesOfRide
+    this.CM=CostPerMile
+    this.DOR=DistanceOfRide
+    this.BF=BookingFee
+    this.OF=OtherFees
+}
+
+//----The formula to calculate how much does Uber cost is: Base Fare + (Uber Cost per minute * minutes of ride) + (Uber Cost per mile * distance of ride) 
+//+ Booking Fee + Other Fees = Total of Uber Fare-----
+
+getPrice(){
+    console.log("Uber Price "+(this.BF+(this.CPM*this.MOR)+(this.CM*this.DOR)+this.BF+this.OF))
+}
+setPrice(newBaseFare,newCostPerMinute,newMinutesOfRide,newCostPerMile,newDistanceOfRide,newBookingFee,newOtherFees){
+    this.BF=newBaseFare
+    this.CPM=newCostPerMinute
+    this.MOR=newMinutesOfRide
+    this.CM=newCostPerMile
+    this.DOR=newDistanceOfRide
+    this.BF=newBookingFee
+    this.OF=newOtherFees
+} 
+}
+let totalPrice= new UberPriceCalc()
+totalPrice.setPrice(90,10,100,25,14,50,10)
+totalPrice.getPrice()
+
+// Output:
+// Uber Price 1460
+
+
+
+
+
+
+
+
        
        
     
