@@ -108,7 +108,8 @@ class Movie
        // Area of a circle is 28.274333882308138
        // Circumference of a circle is 18.84955592153876
 
-//3)
+//3)Write a “person” class to hold all the details.
+
 
 class person {
     constructor(name,fatherName,motherName,gender,address,mobileNo,Email) {
@@ -154,7 +155,7 @@ class person {
   console.log(sumitha.personmobileNo());
   console.log(sumitha.personEmail());
 
-//   Output:
+//  Output:
 // my name is  Jeni
 // my father name is Ebi
 // my mother name is Prisci
